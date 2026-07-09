@@ -30,10 +30,16 @@
 <!-- ============================================= -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
   <div class="container">
-    <a class="navbar-brand" href="#inicio">
-      <span class="brand-node"></span>
-      Red<span class="text-accent">Urbana</span>
-    </a>
+    <div class="brand-group">
+      <a class="navbar-brand mb-0" href="#inicio">
+        <span class="brand-node"></span>
+        Red<span class="text-accent">Urbana</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">|</span>
+      <a class="brand-secondary" href="https://depraved-composer-numerous.ngrok-free.dev/tienda.html" target="_blank" rel="noopener">
+        Red Urbana <span class="text-accent">(Materiales)</span>
+      </a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,6 +50,11 @@
         <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
         <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://depraved-composer-numerous.ngrok-free.dev/tienda.html" target="_blank" rel="noopener">
+            <i class="bi bi-shop me-1"></i>Materiales
+          </a>
+        </li>
         <li class="nav-item ms-lg-2">
           <a href="https://wa.me/5492664860795" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm px-3">
             <i class="bi bi-whatsapp me-1"></i> WhatsApp
@@ -183,6 +194,13 @@
       </div>
       <div class="col-md-6 col-lg-4" data-reveal>
         <div class="service-card">
+          <div class="service-icon"><i class="bi bi-broadcast-pin"></i></div>
+          <h3>Antenas e Internet Satelital</h3>
+          <p>Instalación de antenas y equipos Starlink para internet de alta velocidad en cualquier zona.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="service-card">
           <div class="service-icon"><i class="bi bi-headset"></i></div>
           <h3>Asistencia técnica</h3>
           <p>Soporte remoto y presencial para resolver cualquier inconveniente informático.</p>
@@ -249,7 +267,26 @@
       </div>
       <div class="col-lg-6" data-reveal>
         <div class="feature-visual">
-          <i class="bi bi-pc-display-horizontal"></i>
+          <!-- Ilustración propia: armado / reparación de PC -->
+          <svg viewBox="0 0 400 300" class="illus" role="img" aria-label="Técnico armando una PC">
+            <rect x="70" y="60" width="150" height="170" rx="10" class="illus-fill-soft"/>
+            <rect x="90" y="80" width="110" height="18" rx="4" class="illus-fill"/>
+            <rect x="90" y="108" width="70" height="10" rx="3" class="illus-fill"/>
+            <rect x="90" y="126" width="90" height="10" rx="3" class="illus-fill"/>
+            <circle cx="145" cy="200" r="14" class="illus-ring"/>
+            <g class="illus-lines">
+              <line x1="230" y1="90" x2="290" y2="60"/>
+              <line x1="230" y1="130" x2="300" y2="130"/>
+              <line x1="230" y1="170" x2="290" y2="200"/>
+            </g>
+            <circle cx="290" cy="60" r="6" class="illus-node"/>
+            <circle cx="300" cy="130" r="6" class="illus-node"/>
+            <circle cx="290" cy="200" r="6" class="illus-node"/>
+            <g transform="translate(210,150) rotate(35)">
+              <rect x="0" y="0" width="10" height="70" rx="4" class="illus-tool"/>
+              <rect x="-6" y="-14" width="22" height="18" rx="4" class="illus-tool"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
@@ -274,7 +311,72 @@
       </div>
       <div class="col-lg-6" data-reveal>
         <div class="feature-visual feature-visual-light">
-          <i class="bi bi-camera-video"></i>
+          <!-- Ilustración propia: instalación de cámara WiFi -->
+          <svg viewBox="0 0 400 300" class="illus" role="img" aria-label="Instalación de cámara de seguridad WiFi">
+            <rect x="40" y="230" width="320" height="14" rx="4" class="illus-fill-soft"/>
+            <rect x="190" y="60" width="16" height="170" class="illus-fill-soft"/>
+            <g transform="translate(150,55)">
+              <rect x="0" y="10" width="70" height="34" rx="8" class="illus-fill"/>
+              <circle cx="70" cy="27" r="16" class="illus-ring-accent"/>
+              <circle cx="70" cy="27" r="7" class="illus-node"/>
+            </g>
+            <g class="illus-lines-accent">
+              <path d="M225 60 Q 250 40 270 55" fill="none"/>
+              <path d="M225 50 Q 260 20 290 40" fill="none"/>
+            </g>
+            <g class="illus-lines">
+              <line x1="220" y1="80" x2="300" y2="130"/>
+              <line x1="300" y1="130" x2="300" y2="190"/>
+            </g>
+            <circle cx="300" cy="130" r="6" class="illus-node"/>
+            <rect x="280" y="185" width="40" height="60" rx="6" class="illus-fill-soft"/>
+            <rect x="288" y="196" width="24" height="14" rx="3" class="illus-fill"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================= -->
+<!-- SECCIÓN DESTACADA: ANTENAS / STARLINK          -->
+<!-- ============================================= -->
+<section class="section-py feature-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-reveal>
+        <span class="eyebrow"><i class="bi bi-broadcast-pin"></i> Conectividad</span>
+        <h2>Internet Satelital y Antenas</h2>
+        <p class="feature-text">
+          Instalamos antenas y equipos Starlink para que tengas internet de alta velocidad en cualquier zona, incluso donde otros proveedores no llegan.
+        </p>
+        <a href="https://wa.me/5492664860795" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg mt-2">
+          <i class="bi bi-whatsapp me-2"></i>Consultar Instalación
+        </a>
+      </div>
+      <div class="col-lg-6" data-reveal>
+        <div class="feature-visual">
+          <!-- Ilustración propia: instalación de antena / Starlink -->
+          <svg viewBox="0 0 400 300" class="illus" role="img" aria-label="Instalación de antena satelital Starlink">
+            <path d="M60 250 L150 130 L240 250 Z" class="illus-fill-soft"/>
+            <rect x="145" y="90" width="10" height="45" class="illus-fill"/>
+            <g transform="translate(150,70) rotate(-20)">
+              <path d="M-38 20 A 40 40 0 0 1 38 20 L 0 20 Z" class="illus-fill"/>
+            </g>
+            <circle cx="150" cy="70" r="5" class="illus-node"/>
+            <g class="illus-lines-accent">
+              <path d="M155 55 Q 200 20 250 40" fill="none"/>
+              <path d="M155 45 Q 220 -5 290 15" fill="none"/>
+              <path d="M155 65 Q 210 40 260 65" fill="none"/>
+            </g>
+            <circle cx="300" cy="45" r="7" class="illus-node"/>
+            <rect x="292" y="38" width="16" height="14" rx="2" class="illus-ring-accent"/>
+            <g class="illus-nodes-static">
+              <circle cx="335" cy="20" r="2.5"/>
+              <circle cx="355" cy="60" r="2.5"/>
+              <circle cx="320" cy="80" r="2.5"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
