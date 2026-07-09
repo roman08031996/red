@@ -58,4 +58,30 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements.forEach((el) => el.classList.add("is-visible"));
   }
 
+
+  /* ---- Contador de vistas discreto (junto al copyright) ----
+     Usa CountAPI (countapi.xyz), un servicio externo gratuito para
+     contar visitas en sitios estaticos sin backend propio.
+     Se registra la visita al cargar la pagina (en silencio) y el
+     numero solo se muestra al tocar el icono del ojo. */
+  const NAMESPACE = "redurbana-sanluis";
+  const KEY = "vistas-sitio";
+  const viewsToggle = document.getElementById("viewsToggle");
+  const viewsCount = document.getElementById("viewsCount");
+  let viewsValue = null;
+
+  if (viewsToggle && viewsCount) {
+    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
+      .then((res) => res.json())
+      .then((data) => { viewsValue = data.value; })
+      .catch(() => { viewsValue = null; });
+
+    viewsToggle.addEventListener("click", () => {
+      const isVisible = viewsCount.classList.toggle("is-visible");
+      if (isVisible) {
+        viewsCount.textContent = viewsValue !== null ? viewsValue : "...";
+      }
+    });
+  }
+
 });
